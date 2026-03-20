@@ -13,13 +13,12 @@ from telegram.ext import (
 )
 
 # ===== CONFIGURATION =====
-import os
 BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME")
+BTC_ADDRESS = os.getenv("BTC_ADDRESS")
 ADMIN_IDS = [5475530776]
-CHANNEL_USERNAME = "YTubeVideoDownloader"
 VIDEO_LIMIT = 5
 DB_FILE = "user_database.json"
-BTC_ADDRESS = "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh"
 
 def load_db():
     if os.path.exists(DB_FILE):
