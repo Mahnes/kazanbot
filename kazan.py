@@ -13,7 +13,8 @@ from telegram.ext import (
 )
 
 # ===== CONFIGURATION =====
-BOT_TOKEN = "8757547024:AAEINSs6NnWXvhfnxbaJLNzevrRgJxDJIj8"
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_IDS = [5475530776]
 CHANNEL_USERNAME = "YTubeVideoDownloader"
 VIDEO_LIMIT = 5
